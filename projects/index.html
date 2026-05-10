@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>عطاء مدى - للمقاولات والعزل</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- Tailwind CSS local -->
+    <link rel="stylesheet" href="/src/output.css">
+    <!-- Font Awesome local -->
+    <link rel="stylesheet" href="/assets/css/all.min.css">
+    <!-- Google Fonts - Tajawal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <!-- ===== TOP BAR ===== -->
+    <div class="topbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="flex flex-wrap items-center justify-between gap-x-6 gap-y-1 topbar-row">
+            <!-- Left: working hours -->
+            <div class="flex items-center gap-2">
+            <i class="fas fa-clock" style="color:#C9A84C; font-size:0.75rem;"></i>
+            <span>خدمة العملاء: السبت – الخميس | 8 صباحاً – 5 مساءً</span>
+            </div>
+            <!-- Right: contact -->
+            <div class="flex items-center gap-4 flex-wrap">
+            <a href="mailto:info@ataamada.sa" class="flex items-center gap-2">
+                <i class="fas fa-envelope" style="color:#C9A84C; font-size:0.75rem;"></i>
+                <span>info@ataamada.sa</span>
+            </a>
+            <span style="color:#4b5563;">|</span>
+            <a href="tel:+966123456789" class="flex items-center gap-2" dir="ltr">
+                <i class="fas fa-phone" style="color:#C9A84C; font-size:0.75rem;"></i>
+                <span>+966 12 345 6789</span>
+            </a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="flex items-center justify-between h-16 gap-4">
+                <!-- Logo -->
+                <a href="/index.html" class="flex items-center gap-3 shrink-0" style="text-decoration:none;">
+                <div class="logo-badge"><img src="/assets/images/logo-white.png" alt="Logo" /></div>
+                <div>
+                    <div style="font-weight:900; color:#142857; font-size:1.1rem; line-height:1.2;">عطاء مدى</div>
+                    <div style="font-size:0.73rem; color:#6b7280; line-height:1.2;">للمقاولات والعزل</div>
+                </div>
+                </a>
+                <!-- Desktop Nav Links -->
+                <div class="desktop-nav flex items-center gap-5" style="display:flex;">
+                    <a href="/index.html" class="nav-link active">الرئيسية</a>
+                    <a href="/about/" class="nav-link">من نحن</a>
+                    <a href="/services/" class="nav-link">خدماتنا</a>
+                    <a href="/products/" class="nav-link">المنتجات</a>
+                    <a href="/projects/" class="nav-link">المشاريع</a>
+                    <a href="/blog/" class="nav-link">المدونة</a>
+                    <a href="/contact/" class="nav-link">تواصل معنا</a>
+                </div>
+                <!-- Desktop CTA -->
+                <div class="desktop-cta flex items-center gap-3 shrink-0" style="display:flex;">
+                    <a href="https://wa.me/966123456789" class="btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>واتساب</span>
+                    </a>
+                </div>
+                <!-- Mobile: Buttons + Hamburger -->
+                <div class="flex lg:hidden items-center gap-4 shrink-0">
+                    <a href="https://wa.me/966123456789" class="btn-whatsapp" style="padding:8px 12px;">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <button id="menu-toggle" style="padding:6px 8px; background:none; border:none; cursor:pointer; color:#374151;" aria-label="القائمة">
+                        <i class="fas fa-bars" id="menu-icon" style="font-size:1.25rem;"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu">
+            <a href="/index.html" class="mobile-nav-link active">الرئيسية</a>
+            <a href="/about/" class="mobile-nav-link">من نحن</a>
+            <a href="/services/" class="mobile-nav-link">خدماتنا</a>
+            <a href="/products/" class="mobile-nav-link">المنتجات</a>
+            <a href="/projects/" class="mobile-nav-link">المشاريع</a>
+            <a href="/blog/" class="mobile-nav-link">المدونة</a>
+            <a href="/contact/" class="mobile-nav-link">تواصل معنا</a>
+        </div>
+    </nav>
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <h1 class="page-hero-title">مشاريعنا</h1>
+        <p class="page-hero-sub">أعمال متميزة نفخر بإنجازها في مختلف أنحاء المملكة</p>
+        <div class="page-hero-line"></div>
+    </div>
+    <!-- PROJECTS GRID -->
+    <section class="projects-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="reveal" style="text-align:center;margin-bottom:52px;">
+            <h2 class="sec-title">مشاريع متنوعة في جميع أنحاء المملكة</h2>
+            <p class="sec-sub">من المشاريع السكنية إلى التجارية والصناعية والحكومية</p>
+        </div>
+        <div class="proj-grid">
+            <!-- Card 1 -->
+            <div class="proj-card reveal" style="transition-delay:.04s;">
+            <div class="proj-img-wrap">
+                <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80" alt="مشروع 1" class="proj-img"/>
+            </div>
+            <div class="proj-body">
+                <div class="proj-cat-tag"><i class="fas fa-tag"></i> عزل حراري ومائي شامل</div>
+                <h3 class="proj-title">مجمع سكني فاخر - حي النرجس، الرياض</h3>
+                <p class="proj-desc">مشروع عزل متكامل لمجمع سكني فاخر يضم 120 وحدة سكنية، شمل العزل الحراري للأسطح والجدران الخارجية، والعزل المائي للأسطح والخزانات والحمامات.</p>
+                <div class="proj-meta">
+                <div class="proj-meta-item"><i class="fas fa-location-dot"></i> الرياض</div>
+                <div class="proj-meta-item"><i class="fas fa-calendar"></i> 2026</div>
+                </div>
+            </div>
+            </div>
+    
+            <!-- Card 2 -->
+            <div class="proj-card reveal" style="transition-delay:.08s;">
+            <div class="proj-img-wrap">
+                <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80" alt="مشروع 2" class="proj-img"/>
+            </div>
+            <div class="proj-body">
+                <div class="proj-cat-tag"><i class="fas fa-tag"></i> عزل شامل ومقاومة حرائق</div>
+                <h3 class="proj-title">برج تجاري - كورنيش جدة</h3>
+                <p class="proj-desc">عزل حراري ومائي لبرج تجاري بارتفاع 25 طابق، مع تطبيق أنظمة مقاومة الحرائق للهيكل المعدني والممرات، وفقاً لأعلى معايير السلامة.</p>
+                <div class="proj-meta">
+                <div class="proj-meta-item"><i class="fas fa-location-dot"></i> جدة</div>
+                <div class="proj-meta-item"><i class="fas fa-calendar"></i> 2025</div>
+                </div>
+            </div>
+            </div>
+    
+            <!-- Card 3 -->
+            <div class="proj-card reveal" style="transition-delay:.12s;">
+            <div class="proj-img-wrap">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="مشروع 3" class="proj-img"/>
+            </div>
+            <div class="proj-body">
+                <div class="proj-cat-tag"><i class="fas fa-tag"></i> عزل وصيانة</div>
+                <h3 class="proj-title">مجمع صناعي - المدينة الصناعية، الدمام</h3>
+                <p class="proj-desc">عزل حراري لمستودعات ومباني إدارية في مجمع صناعي، مع عقد صيانة دورية لمدة 5 سنوات يشمل الفحص والصيانة الوقائية.</p>
+                <div class="proj-meta">
+                <div class="proj-meta-item"><i class="fas fa-location-dot"></i> الدمام</div>
+                <div class="proj-meta-item"><i class="fas fa-calendar"></i> 2025</div>
+                </div>
+            </div>
+            </div>
+    
+            <!-- Card 4 -->
+            <div class="proj-card reveal" style="transition-delay:.04s;">
+            <div class="proj-img-wrap">
+                <img src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=410&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="مشروع 4" class="proj-img"/>
+            </div>
+            <div class="proj-body">
+                <div class="proj-cat-tag"><i class="fas fa-tag"></i> عزل وترميم</div>
+                <h3 class="proj-title">مبنى حكومي - وزارة، الرياض</h3>
+                <p class="proj-desc">ترميم وإعادة عزل مبنى حكومي قائم، شمل معالجة التسربات وتطبيق حديث بتقنيات عزل متطورة مطابقة للمواصفات.</p>
+                <div class="proj-meta">
+                <div class="proj-meta-item"><i class="fas fa-location-dot"></i> الرياض</div>
+                <div class="proj-meta-item"><i class="fas fa-calendar"></i> 2024</div>
+                </div>
+            </div>
+            </div>
+    
+            <!-- Card 5 -->
+            <div class="proj-card reveal" style="transition-delay:.08s;">
+            <div class="proj-img-wrap">
+                <img src="https://images.unsplash.com/photo-1460574283810-2aab119d8511?w=800&q=80" alt="مشروع 5" class="proj-img"/>
+            </div>
+            <div class="proj-body">
+                <div class="proj-cat-tag"><i class="fas fa-tag"></i> عزل حراري ومائي</div>
+                <h3 class="proj-title">فيلات سكنية راقية - شمال الرياض</h3>
+                <p class="proj-desc">عزل شامل لـ 15 فيلا فاخرة، شمل الأسطح والجدران الخارجية والخزانات، مع ضمان 10 سنوات على جميع الأعمال.</p>
+                <div class="proj-meta">
+                <div class="proj-meta-item"><i class="fas fa-location-dot"></i> الرياض</div>
+                <div class="proj-meta-item"><i class="fas fa-calendar"></i> 2024</div>
+                </div>
+            </div>
+            </div>
+    
+            <!-- Card 6 -->
+            <div class="proj-card reveal" style="transition-delay:.12s;">
+            <div class="proj-img-wrap">
+                <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80" alt="مشروع 6" class="proj-img"/>
+            </div>
+            <div class="proj-body">
+                <div class="proj-cat-tag"><i class="fas fa-tag"></i> عزل طبي متخصص</div>
+                <h3 class="proj-title">مستشفى خاص - حي السليمانية، الرياض</h3>
+                <p class="proj-desc">عزل متخصص لمبنى مستشفى بمواصفات طبية، شمل العزل الحراري والمائي والصوتي، باستخدام مواد معتمدة للمنشآت الصحية.</p>
+                <div class="proj-meta">
+                <div class="proj-meta-item"><i class="fas fa-location-dot"></i> الرياض</div>
+                <div class="proj-meta-item"><i class="fas fa-calendar"></i> 2024</div>
+                </div>
+            </div>
+            </div>
+    
+            <!-- Card 7 -->
+            <div class="proj-card reveal" style="transition-delay:.04s;">
+            <div class="proj-img-wrap">
+                <img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=800&q=80" alt="مشروع 7" class="proj-img"/>
+            </div>
+            <div class="proj-body">
+                <div class="proj-cat-tag"><i class="fas fa-tag"></i> عزل صناعي</div>
+                <h3 class="proj-title">مصنع - الجبيل الصناعية</h3>
+                <p class="proj-desc">عزل حراري لمبنى مصنع ومستودعات، مع مقاومة للحرائق والمواد الكيميائية وفق أعلى معايير السلامة الصناعية.</p>
+                <div class="proj-meta">
+                <div class="proj-meta-item"><i class="fas fa-location-dot"></i> الجبيل</div>
+                <div class="proj-meta-item"><i class="fas fa-calendar"></i> 2023</div>
+                </div>
+            </div>
+            </div>
+    
+            <!-- Card 8 -->
+            <div class="proj-card reveal" style="transition-delay:.08s;">
+            <div class="proj-img-wrap">
+                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80" alt="مشروع 8" class="proj-img"/>
+            </div>
+            <div class="proj-body">
+                <div class="proj-cat-tag"><i class="fas fa-tag"></i> عزل حراري</div>
+                <h3 class="proj-title">مشروع سكني - المدينة المنورة</h3>
+                <p class="proj-desc">عزل حراري لـ 80 وحدة سكنية في مشروع سكني متوسط، مع استخدام مواد عزل صديقة للبيئة ومطابقة للمواصفات.</p>
+                <div class="proj-meta">
+                <div class="proj-meta-item"><i class="fas fa-location-dot"></i> المدينة المنورة</div>
+                <div class="proj-meta-item"><i class="fas fa-calendar"></i> 2023</div>
+                </div>
+            </div>
+            </div>
+    
+            <!-- Card 9 -->
+            <div class="proj-card reveal" style="transition-delay:.12s;">
+            <div class="proj-img-wrap">
+                <img src="https://images.unsplash.com/photo-1555636222-cae831e670b3?w=800&q=80" alt="مشروع 9" class="proj-img"/>
+            </div>
+            <div class="proj-body">
+                <div class="proj-cat-tag"><i class="fas fa-tag"></i> عزل تجاري شامل</div>
+                <h3 class="proj-title">مركز تسوق - القصيم</h3>
+                <p class="proj-desc">عزل حراري ومائي لمركز تسوق كبير بمساحة 20,000 متر مربع، مع أنظمة حماية من الحرائق وتكييف الهواء الموفر للطاقة.</p>
+                <div class="proj-meta">
+                <div class="proj-meta-item"><i class="fas fa-location-dot"></i> القصيم</div>
+                <div class="proj-meta-item"><i class="fas fa-calendar"></i> 2023</div>
+                </div>
+            </div>
+            </div>
+    
+        </div>
+        </div>
+    </section>
+    
+    <!-- MINI CTA -->
+    <section class="mini-cta-section" id="contact">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="mini-cta-dark reveal">
+            <h2 class="mini-cta-title">مشروعك القادم معنا؟</h2>
+            <p class="mini-cta-sub">دعنا نساعدك في تحقيق مشروعك بأعلى معايير الجودة والاحترافية</p>
+            <a href="tel:+966123456789" class="btn-cta-gold">
+            <i class="fas fa-rocket"></i>
+            ابدأ مشروعك الآن
+            </a>
+        </div>
+        </div>
+    </section>
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <!-- Main Footer Grid -->
+        <div class="footer-grid">
+            <!-- Col 1: Logo + About + Social -->
+            <div class="footer-col footer-col-brand">
+            <a href="/index.html" class="footer-logo">
+                <div class="footer-logo-badge"><img src="/assets/images/logo-white.png" alt="Logo" /></div>
+                <div>
+                <div class="footer-logo-name">عطاء مدى</div>
+                <div class="footer-logo-sub">للمقاولات والعزل</div>
+                </div>
+            </a>
+            <p class="footer-about">
+                شركة رائدة في مجال المقاولات والعزل الحراري والمائي وتوريد مواد البناء بخبرة تمتد لسنوات في خدمة المملكة العربية السعودية.
+            </p>
+            <!-- Social Icons -->
+            <div class="footer-social">
+                <a href="#" class="social-btn" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-btn" aria-label="تويتر"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" class="social-btn" aria-label="إنستغرام"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-btn" aria-label="لينكدإن"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-btn" aria-label="يوتيوب"><i class="fab fa-youtube"></i></a>
+            </div>
+            </div>
+            <!-- Col 2: Quick Links -->
+            <div class="footer-col">
+            <h4 class="footer-col-title">روابط سريعة</h4>
+            <ul class="footer-links">
+                <li><a href="/index.html">الرئيسية</a></li>
+                <li><a href="/about/">من نحن</a></li>
+                <li><a href="/services/">خدماتنا</a></li>
+                <li><a href="/products/">المنتجات</a></li>
+                <li><a href="/projects/">المشاريع</a></li>
+                <li><a href="/blog/">المدونة</a></li>
+                <li><a href="/contact/">تواصل معنا</a></li>
+            </ul>
+            </div>
+            <!-- Col 3: Services -->
+            <div class="footer-col">
+            <h4 class="footer-col-title">خدماتنا</h4>
+            <ul class="footer-links">
+                <li><a href="#">العزل الحراري</a></li>
+                <li><a href="#">العزل المائي</a></li>
+                <li><a href="#">عزل المباني</a></li>
+                <li><a href="#">مقاومة الحرائق</a></li>
+                <li><a href="#">الصيانة والتشغيل</a></li>
+                <li><a href="#">توريد مواد البناء</a></li>
+                <li><a href="#">توريد مواد العزل</a></li>
+            </ul>
+            </div>
+            <!-- Col 4: Contact -->
+            <div class="footer-col">
+            <h4 class="footer-col-title">معلومات التواصل</h4>
+            <ul class="footer-contact-list">
+                <li>
+                <i class="fas fa-location-dot footer-contact-icon"></i>
+                <span>الرياض، المملكة العربية السعودية<br/>نخدم جميع أنحاء المملكة</span>
+                </li>
+                <li>
+                <i class="fas fa-phone footer-contact-icon"></i>
+                <a href="tel:+966123456789" dir="ltr">+966 12 345 6789</a>
+                </li>
+                <li>
+                <i class="fas fa-envelope footer-contact-icon"></i>
+                <a href="mailto:info@ataamada.sa">info@ataamada.sa</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </div>
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 footer-bottom-inner">
+            <span class="footer-copy">© 2026 عطاء مدى للمقاولات والعزل. جميع الحقوق محفوظة.</span>
+        </div>
+        </div>
+    </footer>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

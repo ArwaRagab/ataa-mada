@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>عطاء مدى - للمقاولات والعزل</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- Tailwind CSS local -->
+    <link rel="stylesheet" href="/src/output.css">
+    <!-- Font Awesome local -->
+    <link rel="stylesheet" href="/assets/css/all.min.css">
+    <!-- Google Fonts - Tajawal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <!-- ===== TOP BAR ===== -->
+    <div class="topbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="flex flex-wrap items-center justify-between gap-x-6 gap-y-1 topbar-row">
+            <!-- Left: working hours -->
+            <div class="flex items-center gap-2">
+            <i class="fas fa-clock" style="color:#C9A84C; font-size:0.75rem;"></i>
+            <span>خدمة العملاء: السبت – الخميس | 8 صباحاً – 5 مساءً</span>
+            </div>
+            <!-- Right: contact -->
+            <div class="flex items-center gap-4 flex-wrap">
+            <a href="mailto:info@ataamada.sa" class="flex items-center gap-2">
+                <i class="fas fa-envelope" style="color:#C9A84C; font-size:0.75rem;"></i>
+                <span>info@ataamada.sa</span>
+            </a>
+            <span style="color:#4b5563;">|</span>
+            <a href="tel:+966123456789" class="flex items-center gap-2" dir="ltr">
+                <i class="fas fa-phone" style="color:#C9A84C; font-size:0.75rem;"></i>
+                <span>+966 12 345 6789</span>
+            </a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="flex items-center justify-between h-16 gap-4">
+                <!-- Logo -->
+                <a href="/index.html" class="flex items-center gap-3 shrink-0" style="text-decoration:none;">
+                <div class="logo-badge"><img src="/assets/images/logo-white.png" alt="Logo" /></div>
+                <div>
+                    <div style="font-weight:900; color:#142857; font-size:1.1rem; line-height:1.2;">عطاء مدى</div>
+                    <div style="font-size:0.73rem; color:#6b7280; line-height:1.2;">للمقاولات والعزل</div>
+                </div>
+                </a>
+                <!-- Desktop Nav Links -->
+                <div class="desktop-nav flex items-center gap-5" style="display:flex;">
+                    <a href="/index.html" class="nav-link active">الرئيسية</a>
+                    <a href="/about/" class="nav-link">من نحن</a>
+                    <a href="/services/" class="nav-link">خدماتنا</a>
+                    <a href="/products/" class="nav-link">المنتجات</a>
+                    <a href="/projects/" class="nav-link">المشاريع</a>
+                    <a href="/blog/" class="nav-link">المدونة</a>
+                    <a href="/contact/" class="nav-link">تواصل معنا</a>
+                </div>
+                <!-- Desktop CTA -->
+                <div class="desktop-cta flex items-center gap-3 shrink-0" style="display:flex;">
+                    <a href="https://wa.me/966123456789" class="btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>واتساب</span>
+                    </a>
+                </div>
+                <!-- Mobile: Buttons + Hamburger -->
+                <div class="flex lg:hidden items-center gap-4 shrink-0">
+                    <a href="https://wa.me/966123456789" class="btn-whatsapp" style="padding:8px 12px;">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <button id="menu-toggle" style="padding:6px 8px; background:none; border:none; cursor:pointer; color:#374151;" aria-label="القائمة">
+                        <i class="fas fa-bars" id="menu-icon" style="font-size:1.25rem;"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu">
+            <a href="/index.html" class="mobile-nav-link active">الرئيسية</a>
+            <a href="/about/" class="mobile-nav-link">من نحن</a>
+            <a href="/services/" class="mobile-nav-link">خدماتنا</a>
+            <a href="/products/" class="mobile-nav-link">المنتجات</a>
+            <a href="/projects/" class="mobile-nav-link">المشاريع</a>
+            <a href="/blog/" class="mobile-nav-link">المدونة</a>
+            <a href="/contact/" class="mobile-nav-link">تواصل معنا</a>
+        </div>
+    </nav>
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <h1 class="page-hero-title">المدونة</h1>
+        <p class="page-hero-sub">مقالات ونصائح متخصصة في مجال العزل والمقاولات</p>
+        <div class="page-hero-line"></div>
+    </div>
+    <!-- FILTER BAR -->
+    <div class="filter-bar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="filter-inner">
+            <button class="filter-btn active" data-cat="all">الكل</button>
+            <button class="filter-btn" data-cat="thermal">العزل الحراري</button>
+            <button class="filter-btn" data-cat="water">العزل المائي</button>
+            <button class="filter-btn" data-cat="safety">السلامة</button>
+            <button class="filter-btn" data-cat="materials">مواد البناء</button>
+            <button class="filter-btn" data-cat="tips">نصائح</button>
+            <button class="filter-btn" data-cat="maintenance">الصيانة</button>
+        </div>
+        </div>
+    </div>
+    <!-- BLOG POSTS -->
+    <section class="blog-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="blog-grid" id="blog-grid">
+                <!-- Card 1 -->
+                <div class="blog-card reveal" data-cat="thermal" style="transition-delay:.04s;">
+                <div class="blog-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="" class="blog-img"/>
+                    <span class="blog-cat-badge">العزل الحراري</span>
+                </div>
+                <div class="blog-body">
+                    <div class="blog-meta">
+                    <div class="blog-meta-item"><i class="fas fa-calendar"></i> 15 مايو 2026</div>
+                    <div class="blog-meta-item"><i class="fas fa-user"></i> م. أحمد العتيبي</div>
+                    </div>
+                    <h3 class="blog-card-title gold">أهمية العزل الحراري في المناخ السعودي وتوفير الطاقة</h3>
+                    <p class="blog-excerpt">يعتبر العزل الحراري من أهم الاستثمارات التي يمكن أن تقوم بها في مبنيك السكني أو التجاري. في هذا المقال نستعرض كيف يمكن للعزل الحراري الصحيح أن...</p>
+                    <a href="/blog/" class="blog-read-more"><i class="fas fa-arrow-left"></i> اقرأ المزيد</a>
+                </div>
+                </div>
+        
+                <!-- Card 2 -->
+                <div class="blog-card reveal" data-cat="water" style="transition-delay:.08s;">
+                <div class="blog-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="" class="blog-img"/>
+                    <span class="blog-cat-badge">العزل المائي</span>
+                </div>
+                <div class="blog-body">
+                    <div class="blog-meta">
+                    <div class="blog-meta-item"><i class="fas fa-calendar"></i> 12 مايو 2026</div>
+                    <div class="blog-meta-item"><i class="fas fa-user"></i> م. سارة القحطاني</div>
+                    </div>
+                    <h3 class="blog-card-title">أنواع العزل المائي وأفضل الممارسات للتطبيق الصحيح</h3>
+                    <p class="blog-excerpt">العزل المائي ليس مجرد طبقة حماية، بل هو استثمار طويل الأمد في صحة مبناك وسلامته. نستعرض في هذا المقال الشامل أنواع العزل المائي المختلفة من...</p>
+                    <a href="/blog/" class="blog-read-more"><i class="fas fa-arrow-left"></i> اقرأ المزيد</a>
+                </div>
+                </div>
+        
+                <!-- Card 3 -->
+                <div class="blog-card reveal" data-cat="safety" style="transition-delay:.12s;">
+                <div class="blog-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80" alt="" class="blog-img"/>
+                    <span class="blog-cat-badge">السلامة</span>
+                </div>
+                <div class="blog-body">
+                    <div class="blog-meta">
+                    <div class="blog-meta-item"><i class="fas fa-calendar"></i> 8 مايو 2026</div>
+                    <div class="blog-meta-item"><i class="fas fa-user"></i> م. خالد المطيري</div>
+                    </div>
+                    <h3 class="blog-card-title">معايير السلامة السعودية في مقاومة الحرائق للمباني</h3>
+                    <p class="blog-excerpt">تفرض المملكة العربية السعودية معايير صارمة لمقاومة الحرائق في المباني والممتلكات. في هذا المقال التفصيلي، نشرح المتطلبات والمواد المعتمدة...</p>
+                    <a href="/blog/" class="blog-read-more"><i class="fas fa-arrow-left"></i> اقرأ المزيد</a>
+                </div>
+                </div>
+        
+                <!-- Card 4 -->
+                <div class="blog-card reveal" data-cat="tips" style="transition-delay:.04s;">
+                <div class="blog-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80" alt="" class="blog-img"/>
+                    <span class="blog-cat-badge">نصائح</span>
+                </div>
+                <div class="blog-body">
+                    <div class="blog-meta">
+                    <div class="blog-meta-item"><i class="fas fa-calendar"></i> 5 مايو 2026</div>
+                    <div class="blog-meta-item"><i class="fas fa-user"></i> م. فاطمة الدوسري</div>
+                    </div>
+                    <h3 class="blog-card-title">كيفية اختيار المقاول المناسب لمشروع العزل الخاص بك</h3>
+                    <p class="blog-excerpt">اختيار المقاول المناسب يمكن أن يكون الفرق بين مشروع ناجح وآخر مليء بالمشاكل. نقدم لك دليلاً شاملاً لاختيار مقاول العزل المثالي، بما في ذلك الأسئلة...</p>
+                    <a href="/blog/" class="blog-read-more"><i class="fas fa-arrow-left"></i> اقرأ المزيد</a>
+                </div>
+                </div>
+        
+                <!-- Card 5 -->
+                <div class="blog-card reveal" data-cat="materials" style="transition-delay:.08s;">
+                <div class="blog-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80" alt="" class="blog-img"/>
+                    <span class="blog-cat-badge">مواد البناء</span>
+                </div>
+                <div class="blog-body">
+                    <div class="blog-meta">
+                    <div class="blog-meta-item"><i class="fas fa-calendar"></i> 1 مايو 2026</div>
+                    <div class="blog-meta-item"><i class="fas fa-user"></i> م. عبدالله السبيعي</div>
+                    </div>
+                    <h3 class="blog-card-title">أفضل مواد العزل الحديثة المتوفرة في السوق السعودي</h3>
+                    <p class="blog-excerpt">تتطور صناعة مواد العزل باستمرار لتقديم حلول أكثر فعالية وصديقة للبيئة. نستعرض في هذا المقال أحدث مواد العزل المتوفرة في السوق السعودي، بما في...</p>
+                    <a href="/blog/" class="blog-read-more"><i class="fas fa-arrow-left"></i> اقرأ المزيد</a>
+                </div>
+                </div>
+        
+                <!-- Card 6 -->
+                <div class="blog-card reveal" data-cat="thermal" style="transition-delay:.12s;">
+                <div class="blog-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80" alt="" class="blog-img"/>
+                    <span class="blog-cat-badge">العزل الصوتي</span>
+                </div>
+                <div class="blog-body">
+                    <div class="blog-meta">
+                    <div class="blog-meta-item"><i class="fas fa-calendar"></i> 28 أبريل 2026</div>
+                    <div class="blog-meta-item"><i class="fas fa-user"></i> م. نورة الشهري</div>
+                    </div>
+                    <h3 class="blog-card-title">العزل الصوتي: الحل الأمثل للراحة في المباني السكنية</h3>
+                    <p class="blog-excerpt">في عالم يتزداد ضجيجاً، أصبح العزل الصوتي ضرورة وليس رفاهية. نشرح في هذا المقال كيف يعمل العزل الصوتي، أفضل المواد المستخدمة، وكيف يمكن...</p>
+                    <a href="/blog/" class="blog-read-more"><i class="fas fa-arrow-left"></i> اقرأ المزيد</a>
+                </div>
+                </div>
+        
+                <!-- Card 7 -->
+                <div class="blog-card reveal" data-cat="tips" style="transition-delay:.04s;">
+                <div class="blog-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=800&q=80" alt="" class="blog-img"/>
+                    <span class="blog-cat-badge">نصائح</span>
+                </div>
+                <div class="blog-body">
+                    <div class="blog-meta">
+                    <div class="blog-meta-item"><i class="fas fa-calendar"></i> 15 أبريل 2026</div>
+                    <div class="blog-meta-item"><i class="fas fa-user"></i> م. سعد العزي</div>
+                    </div>
+                    <h3 class="blog-card-title">أخطاء شائعة في العزل وكيفية تجنبها</h3>
+                    <p class="blog-excerpt">حتى مع استخدام أفضل المواد، يمكن أن تؤدي الأخطاء في التطبيق إلى فشل العزل. نستعرض أكثر الأخطاء شيوعاً في مشاريع العزل وكيفية تجنبها...</p>
+                    <a href="/blog/" class="blog-read-more"><i class="fas fa-arrow-left"></i> اقرأ المزيد</a>
+                </div>
+                </div>
+        
+                <!-- Card 8 -->
+                <div class="blog-card reveal" data-cat="water" style="transition-delay:.08s;">
+                <div class="blog-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80" alt="" class="blog-img"/>
+                    <span class="blog-cat-badge">الاستدامة</span>
+                </div>
+                <div class="blog-body">
+                    <div class="blog-meta">
+                    <div class="blog-meta-item"><i class="fas fa-calendar"></i> 20 أبريل 2026</div>
+                    <div class="blog-meta-item"><i class="fas fa-user"></i> م. ريم الحربي</div>
+                    </div>
+                    <h3 class="blog-card-title">العزل الأخضر: حلول صديقة للبيئة للمباني المستدامة</h3>
+                    <p class="blog-excerpt">مع تزايد الوعي البيئي، أصبحت مواد العزل الصديقة للبيئة خياراً مفضلاً. نستكشف في هذا المقال مواد العزل الطبيعية والمستدامة، فوائدها البيئية...</p>
+                    <a href="/blog/" class="blog-read-more"><i class="fas fa-arrow-left"></i> اقرأ المزيد</a>
+                </div>
+                </div>
+                <!-- Card 9 -->
+                <div class="blog-card reveal" data-cat="maintenance" style="transition-delay:.12s;">
+                    <div class="blog-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1768321902537-9c3e84b9f667?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="blog-img"/>
+                        <span class="blog-cat-badge">الصيانة</span>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-meta">
+                        <div class="blog-meta-item"><i class="fas fa-calendar"></i> 25 أبريل 2026</div>
+                        <div class="blog-meta-item"><i class="fas fa-user"></i> م. محمد الغامدي</div>
+                        </div>
+                        <h3 class="blog-card-title">صيانة العزل: متى وكيف تفحص عزل مبناك؟</h3>
+                        <p class="blog-excerpt">العزل الجيد يحتاج إلى صيانة دورية للحفاظ على فعاليته. نوضح في هذا المقال علامات تلف العزل، جدول الصيانة الموصى به، وكيفية إجراء فحص بسيط بنفسك...</p>
+                        <a href="/blog/" class="blog-read-more"><i class="fas fa-arrow-left"></i> اقرأ المزيد</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Pagination -->
+            <div class="pagination reveal">
+                <a href="#" class="page-btn wide">السابق</a>
+                <a href="#" class="page-btn active">1</a>
+                <a href="#" class="page-btn">2</a>
+                <a href="#" class="page-btn">3</a>
+                <a href="#" class="page-btn wide">التالي</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- NEWSLETTER -->
+    <section class="newsletter-section">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 newsletter-inner">
+            <h2 class="newsletter-title">اشترك في نشرتنا البريدية</h2>
+            <p class="newsletter-sub">احصل على أحدث المقالات والنصائح المتخصصة مباشرة في بريدك</p>
+            <div class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="أدخل بريدك الإلكتروني" />
+                <button class="newsletter-btn">اشترك الآن</button>
+            </div>
+        </div>
+    </section>
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <!-- Main Footer Grid -->
+        <div class="footer-grid">
+            <!-- Col 1: Logo + About + Social -->
+            <div class="footer-col footer-col-brand">
+            <a href="/index.html" class="footer-logo">
+                <div class="footer-logo-badge"><img src="/assets/images/logo-white.png" alt="Logo" /></div>
+                <div>
+                <div class="footer-logo-name">عطاء مدى</div>
+                <div class="footer-logo-sub">للمقاولات والعزل</div>
+                </div>
+            </a>
+            <p class="footer-about">
+                شركة رائدة في مجال المقاولات والعزل الحراري والمائي وتوريد مواد البناء بخبرة تمتد لسنوات في خدمة المملكة العربية السعودية.
+            </p>
+            <!-- Social Icons -->
+            <div class="footer-social">
+                <a href="#" class="social-btn" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-btn" aria-label="تويتر"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" class="social-btn" aria-label="إنستغرام"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-btn" aria-label="لينكدإن"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-btn" aria-label="يوتيوب"><i class="fab fa-youtube"></i></a>
+            </div>
+            </div>
+            <!-- Col 2: Quick Links -->
+            <div class="footer-col">
+            <h4 class="footer-col-title">روابط سريعة</h4>
+            <ul class="footer-links">
+                <li><a href="/index.html">الرئيسية</a></li>
+                <li><a href="/about/">من نحن</a></li>
+                <li><a href="/services/">خدماتنا</a></li>
+                <li><a href="/products/">المنتجات</a></li>
+                <li><a href="/projects/">المشاريع</a></li>
+                <li><a href="/blog/">المدونة</a></li>
+                <li><a href="/contact/">تواصل معنا</a></li>
+            </ul>
+            </div>
+            <!-- Col 3: Services -->
+            <div class="footer-col">
+            <h4 class="footer-col-title">خدماتنا</h4>
+            <ul class="footer-links">
+                <li><a href="#">العزل الحراري</a></li>
+                <li><a href="#">العزل المائي</a></li>
+                <li><a href="#">عزل المباني</a></li>
+                <li><a href="#">مقاومة الحرائق</a></li>
+                <li><a href="#">الصيانة والتشغيل</a></li>
+                <li><a href="#">توريد مواد البناء</a></li>
+                <li><a href="#">توريد مواد العزل</a></li>
+            </ul>
+            </div>
+            <!-- Col 4: Contact -->
+            <div class="footer-col">
+            <h4 class="footer-col-title">معلومات التواصل</h4>
+            <ul class="footer-contact-list">
+                <li>
+                <i class="fas fa-location-dot footer-contact-icon"></i>
+                <span>الرياض، المملكة العربية السعودية<br/>نخدم جميع أنحاء المملكة</span>
+                </li>
+                <li>
+                <i class="fas fa-phone footer-contact-icon"></i>
+                <a href="tel:+966123456789" dir="ltr">+966 12 345 6789</a>
+                </li>
+                <li>
+                <i class="fas fa-envelope footer-contact-icon"></i>
+                <a href="mailto:info@ataamada.sa">info@ataamada.sa</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </div>
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 footer-bottom-inner">
+            <span class="footer-copy">© 2026 عطاء مدى للمقاولات والعزل. جميع الحقوق محفوظة.</span>
+        </div>
+        </div>
+    </footer>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

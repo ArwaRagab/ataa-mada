@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>عطاء مدى - للمقاولات والعزل</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- Tailwind CSS local -->
+    <link rel="stylesheet" href="/src/output.css">
+    <!-- Font Awesome local -->
+    <link rel="stylesheet" href="/assets/css/all.min.css">
+    <!-- Google Fonts - Tajawal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <!-- ===== TOP BAR ===== -->
+    <div class="topbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="flex flex-wrap items-center justify-between gap-x-6 gap-y-1 topbar-row">
+            <!-- Left: working hours -->
+            <div class="flex items-center gap-2">
+            <i class="fas fa-clock" style="color:#C9A84C; font-size:0.75rem;"></i>
+            <span>خدمة العملاء: السبت – الخميس | 8 صباحاً – 5 مساءً</span>
+            </div>
+            <!-- Right: contact -->
+            <div class="flex items-center gap-4 flex-wrap">
+            <a href="mailto:info@ataamada.sa" class="flex items-center gap-2">
+                <i class="fas fa-envelope" style="color:#C9A84C; font-size:0.75rem;"></i>
+                <span>info@ataamada.sa</span>
+            </a>
+            <span style="color:#4b5563;">|</span>
+            <a href="tel:+966123456789" class="flex items-center gap-2" dir="ltr">
+                <i class="fas fa-phone" style="color:#C9A84C; font-size:0.75rem;"></i>
+                <span>+966 12 345 6789</span>
+            </a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="flex items-center justify-between h-16 gap-4">
+                <!-- Logo -->
+                <a href="/index.html" class="flex items-center gap-3 shrink-0" style="text-decoration:none;">
+                <div class="logo-badge"><img src="/assets/images/logo-white.png" alt="Logo" /></div>
+                <div>
+                    <div style="font-weight:900; color:#142857; font-size:1.1rem; line-height:1.2;">عطاء مدى</div>
+                    <div style="font-size:0.73rem; color:#6b7280; line-height:1.2;">للمقاولات والعزل</div>
+                </div>
+                </a>
+                <!-- Desktop Nav Links -->
+                <div class="desktop-nav flex items-center gap-5" style="display:flex;">
+                    <a href="/index.html" class="nav-link active">الرئيسية</a>
+                    <a href="/about/" class="nav-link">من نحن</a>
+                    <a href="/services/" class="nav-link">خدماتنا</a>
+                    <a href="/products/" class="nav-link">المنتجات</a>
+                    <a href="/projects/" class="nav-link">المشاريع</a>
+                    <a href="/blog/" class="nav-link">المدونة</a>
+                    <a href="/contact/" class="nav-link">تواصل معنا</a>
+                </div>
+                <!-- Desktop CTA -->
+                <div class="desktop-cta flex items-center gap-3 shrink-0" style="display:flex;">
+                    <a href="https://wa.me/966123456789" class="btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>واتساب</span>
+                    </a>
+                </div>
+                <!-- Mobile: Buttons + Hamburger -->
+                <div class="flex lg:hidden items-center gap-4 shrink-0">
+                    <a href="https://wa.me/966123456789" class="btn-whatsapp" style="padding:8px 12px;">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <button id="menu-toggle" style="padding:6px 8px; background:none; border:none; cursor:pointer; color:#374151;" aria-label="القائمة">
+                        <i class="fas fa-bars" id="menu-icon" style="font-size:1.25rem;"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu">
+        <a href="/index.html" class="mobile-nav-link active">الرئيسية</a>
+        <a href="/about/" class="mobile-nav-link">من نحن</a>
+        <a href="/services/" class="mobile-nav-link">خدماتنا</a>
+        <a href="/products/" class="mobile-nav-link">المنتجات</a>
+        <a href="/projects/" class="mobile-nav-link">المشاريع</a>
+        <a href="/blog/" class="mobile-nav-link">المدونة</a>
+        <a href="/contact/" class="mobile-nav-link">تواصل معنا</a>
+        </div>
+    </nav>
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <h1 class="page-hero-title">خدماتنا</h1>
+        <p class="page-hero-sub">حلول شاملة واحترافية في مجال العزل والمقاولات والصيانة</p>
+        <div class="page-hero-line"></div>
+    </div>
+    <!-- ═══ SERVICE 1: العزل الحراري ═══ -->
+    <section class="svc-page-section white-bg" id="thermal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="svc-row">
+                <!-- Image right -->
+                <div class="svc-img-col reveal">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80" alt="العزل الحراري" class="svc-page-img" />
+                </div>
+                <!-- Content left -->
+                <div class="svc-content-col">
+                    <div class="svc-page-icon-wrap reveal"><i class="fas fa-fire-flame-curved svc-page-icon"></i></div>
+                        <h2 class="svc-page-title reveal" style="transition-delay:0.06s;">العزل الحراري</h2>
+                        <p class="svc-page-desc reveal" style="transition-delay:0.1s;">نوفر حلولاً متقدمة للعزل الحراري باستخدام أحدث المواد والتقنيات العالمية، مما يساعد على تقليل استهلاك الطاقة وتوفير تكاليف التبريد والتدفئة بنسبة تصل إلى 40%.</p>
+                        <ul class="svc-checklist reveal" style="transition-delay:0.14s;">
+                            <li><i class="fas fa-circle-check"></i><span>استخدام مواد عزل عالية الجودة (الفلين، الصوف الصخري، الصوف الزجاجي)</span></li>
+                            <li><i class="fas fa-circle-check"></i><span>تقنيات حديثة لضمان أفضل أداء حراري</span></li>
+                            <li><i class="fas fa-circle-check"></i><span>فريق متخصص ومدرب على أعلى المعايير</span></li>
+                            <li><i class="fas fa-circle-check"></i><span>ضمان طويل المدى على جميع الأعمال</span></li>
+                        </ul>
+                    <div class="reveal" style="transition-delay:0.18s;">
+                        <a href="/contact/" class="btn-svc-price"><i class="fas fa-tag"></i> اطلب عرض سعر</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ═══ SERVICE 2: العزل المائي ═══ -->
+    <section class="svc-page-section" id="water">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="svc-row reverse">
+                <!-- Content right -->
+                <div class="svc-content-col">
+                    <div class="svc-page-icon-wrap reveal"><i class="fas fa-droplet svc-page-icon"></i></div>
+                    <h2 class="svc-page-title reveal" style="transition-delay:0.06s;">العزل المائي</h2>
+                    <p class="svc-page-desc reveal" style="transition-delay:0.1s;">نقدم أنظمة عزل مائي احترافية لحماية المباني من التسربات والرطوبة، باستخدام أفضل المواد العازلة والتقنيات المتطورة التي تضمن حماية طويلة الأمد.</p>
+                    <ul class="svc-checklist reveal" style="transition-delay:0.14s;">
+                        <li><i class="fas fa-circle-check"></i><span>عزل الأسطح والخزانات والحمامات</span></li>
+                        <li><i class="fas fa-circle-check"></i><span>استخدام مواد البيتومين والعزل السائل</span></li>
+                        <li><i class="fas fa-circle-check"></i><span>كشف ومعالجة التسربات المائية</span></li>
+                        <li><i class="fas fa-circle-check"></i><span>ضمان شامل ضد التسربات</span></li>
+                    </ul>
+                    <div class="reveal" style="transition-delay:0.18s;">
+                        <a href="/contact/" class="btn-svc-price"><i class="fas fa-tag"></i> اطلب عرض سعر</a>
+                    </div>
+                </div>
+                <!-- Image left -->
+                <div class="svc-img-col reveal" style="transition-delay:0.08s;">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80" alt="العزل المائي" class="svc-page-img" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ═══ SERVICE 3: عزل المباني ═══ -->
+    <section class="svc-page-section white-bg" id="buildings">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="svc-row">
+                <div class="svc-img-col reveal">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80" alt="عزل المباني" class="svc-page-img" />
+                </div>
+                <div class="svc-content-col">
+                    <div class="svc-page-icon-wrap reveal"><i class="fas fa-building svc-page-icon"></i></div>
+                    <h2 class="svc-page-title reveal" style="transition-delay:0.06s;">عزل المباني</h2>
+                    <p class="svc-page-desc reveal" style="transition-delay:0.1s;">نوفر خدمات عزل شاملة للمباني السكنية والتجارية والصناعية، تشمل العزل الحراري والمائي والصوتي، بأعلى معايير الجودة والاحترافية.</p>
+                    <ul class="svc-checklist reveal" style="transition-delay:0.14s;">
+                        <li><i class="fas fa-circle-check"></i><span>عزل شامل للمباني الجديدة والقائمة</span></li>
+                        <li><i class="fas fa-circle-check"></i><span>حلول مخصصة حسب نوع المبنى واحتياجاته</span></li>
+                        <li><i class="fas fa-circle-check"></i><span>استخدام أحدث التقنيات والمواد</span></li>
+                        <li><i class="fas fa-circle-check"></i><span>التزام تام بالمواعيد والمواصفات</span></li>
+                    </ul>
+                    <div class="reveal" style="transition-delay:0.18s;">
+                        <a href="/contact/" class="btn-svc-price"><i class="fas fa-tag"></i> اطلب عرض سعر</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ═══ SERVICE 4: مقاومة الحرائق ═══ -->
+    <section class="svc-page-section" id="fire">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="svc-row reverse">
+                <div class="svc-content-col">
+                    <div class="svc-page-icon-wrap reveal"><i class="fas fa-fire svc-page-icon"></i></div>
+                    <h2 class="svc-page-title reveal" style="transition-delay:0.06s;">مقاومة الحرائق</h2>
+                    <p class="svc-page-desc reveal" style="transition-delay:0.1s;">نقدم أنظمة متطورة لمقاومة الحرائق وحماية المنشآت، باستخدام مواد مطابقة للمواصفات العالمية ومعايير السلامة السعودية.</p>
+                    <ul class="svc-checklist reveal" style="transition-delay:0.14s;">
+                        <li><i class="fas fa-circle-check"></i><span>مواد مقاومة للحريق معتمدة</span></li>
+                        <li><i class="fas fa-circle-check"></i><span>طلاءات وعوازل مقاومة للنيران</span></li>
+                        <li><i class="fas fa-circle-check"></i><span>أنظمة حماية للهياكل المعدنية</span></li>
+                        <li><i class="fas fa-circle-check"></i><span>مطابقة لمعايير الدفاع المدني السعودي</span></li>
+                    </ul>
+                    <div class="reveal" style="transition-delay:0.18s;">
+                        <a href="/contact/" class="btn-svc-price"><i class="fas fa-tag"></i> اطلب عرض سعر</a>
+                    </div>
+                </div>
+                <div class="svc-img-col reveal" style="transition-delay:0.08s;">
+                    <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=80" alt="مقاومة الحرائق" class="svc-page-img" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ═══ SERVICE 5: الصيانة والتشغيل ═══ -->
+    <section class="svc-page-section white-bg" id="maintenance">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="svc-row">
+                <div class="svc-img-col reveal">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=900&q=80" alt="الصيانة والتشغيل" class="svc-page-img" />
+                </div>
+                <div class="svc-content-col">
+                    <div class="svc-page-icon-wrap reveal"><i class="fas fa-screwdriver-wrench svc-page-icon"></i></div>
+                    <h2 class="svc-page-title reveal" style="transition-delay:0.06s;">الصيانة والتشغيل</h2>
+                    <p class="svc-page-desc reveal" style="transition-delay:0.1s;">نوفر خدمات صيانة وتشغيل احترافي للمنشآت، بفريق متخصص متاح على مدار الساعة لضمان استمرارية العمل وحل أي مشاكل فنية.</p>
+                    <ul class="svc-checklist reveal" style="transition-delay:0.14s;">
+                        <li><i class="fas fa-circle-check"></i><span>صيانة دورية وطارئة</span></li>
+                        <li><i class="fas fa-circle-check"></i><span>فريق فني متوفر 24/7</span></li>
+                        <li><i class="fas fa-circle-check"></i><span>تشغيل وإدارة المرافق</span></li>
+                        <li><i class="fas fa-circle-check"></i><span>عقود صيانة مرنة ومخصصة</span></li>
+                    </ul>
+                    <div class="reveal" style="transition-delay:0.18s;">
+                        <a href="/contact/" class="btn-svc-price"><i class="fas fa-tag"></i> اطلب عرض سعر</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ═══ SERVICE 6: توريد مواد البناء ═══ -->
+    <section class="svc-page-section" id="supply">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="svc-row reverse">
+                <div class="svc-content-col">
+                    <div class="svc-page-icon-wrap reveal"><i class="fas fa-cubes svc-page-icon"></i></div>
+                    <h2 class="svc-page-title reveal" style="transition-delay:0.06s;">توريد مواد البناء والعزل</h2>
+                    <p class="svc-page-desc reveal" style="transition-delay:0.1s;">نوفر توريد شامل لجميع أنواع مواد البناء والعزل عالية الجودة، بأفضل الأسعار التنافسية وتسليم سريع لجميع أنحاء المملكة.</p>
+                    <ul class="svc-checklist reveal" style="transition-delay:0.14s;">
+                        <li><i class="fas fa-circle-check"></i><span>مواد عزل متنوعة (فلين، صوف صخري، بيتومين)</span></li>
+                        <li><i class="fas fa-circle-check"></i><span>مواد بناء عالية الجودة</span></li>
+                        <li><i class="fas fa-circle-check"></i><span>أسعار تنافسية وخصومات للكميات</span></li>
+                        <li><i class="fas fa-circle-check"></i><span>تسليم سريع في جميع المناطق</span></li>
+                    </ul>
+                    <div class="reveal" style="transition-delay:0.18s;">
+                        <a href="/contact/" class="btn-svc-price"><i class="fas fa-tag"></i> اطلب عرض سعر</a>
+                    </div>
+                </div>
+                <div class="svc-img-col reveal" style="transition-delay:0.08s;">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=900&q=80" alt="توريد مواد البناء" class="svc-page-img" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MINI CTA -->
+    <div class="mini-cta" id="contact">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 mini-cta-inner">
+            <h2 class="mini-cta-title">هل لديك مشروع؟ دعنا نساعدك</h2>
+            <p class="mini-cta-sub">احصل على استشارة مجانية وعرض سعر مخصص لمشروعك</p>
+            <a href="tel:+966123456789" class="btn-mini-cta">
+                <i class="fas fa-phone"></i>
+                تواصل معنا الآن
+            </a>
+        </div>
+    </div>
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <!-- Main Footer Grid -->
+        <div class="footer-grid">
+            <!-- Col 1: Logo + About + Social -->
+            <div class="footer-col footer-col-brand">
+            <a href="/index.html" class="footer-logo">
+                <div class="footer-logo-badge"><img src="/assets/images/logo-white.png" alt="Logo" /></div>
+                <div>
+                <div class="footer-logo-name">عطاء مدى</div>
+                <div class="footer-logo-sub">للمقاولات والعزل</div>
+                </div>
+            </a>
+            <p class="footer-about">
+                شركة رائدة في مجال المقاولات والعزل الحراري والمائي وتوريد مواد البناء بخبرة تمتد لسنوات في خدمة المملكة العربية السعودية.
+            </p>
+            <!-- Social Icons -->
+            <div class="footer-social">
+                <a href="#" class="social-btn" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-btn" aria-label="تويتر"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" class="social-btn" aria-label="إنستغرام"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-btn" aria-label="لينكدإن"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-btn" aria-label="يوتيوب"><i class="fab fa-youtube"></i></a>
+            </div>
+            </div>
+            <!-- Col 2: Quick Links -->
+            <div class="footer-col">
+            <h4 class="footer-col-title">روابط سريعة</h4>
+            <ul class="footer-links">
+                <li><a href="/index.html">الرئيسية</a></li>
+                <li><a href="/about/">من نحن</a></li>
+                <li><a href="/services/">خدماتنا</a></li>
+                <li><a href="/products/">المنتجات</a></li>
+                <li><a href="/projects/">المشاريع</a></li>
+                <li><a href="/blog/">المدونة</a></li>
+                <li><a href="/contact/">تواصل معنا</a></li>
+            </ul>
+            </div>
+            <!-- Col 3: Services -->
+            <div class="footer-col">
+            <h4 class="footer-col-title">خدماتنا</h4>
+            <ul class="footer-links">
+                <li><a href="#">العزل الحراري</a></li>
+                <li><a href="#">العزل المائي</a></li>
+                <li><a href="#">عزل المباني</a></li>
+                <li><a href="#">مقاومة الحرائق</a></li>
+                <li><a href="#">الصيانة والتشغيل</a></li>
+                <li><a href="#">توريد مواد البناء</a></li>
+                <li><a href="#">توريد مواد العزل</a></li>
+            </ul>
+            </div>
+            <!-- Col 4: Contact -->
+            <div class="footer-col">
+            <h4 class="footer-col-title">معلومات التواصل</h4>
+            <ul class="footer-contact-list">
+                <li>
+                <i class="fas fa-location-dot footer-contact-icon"></i>
+                <span>الرياض، المملكة العربية السعودية<br/>نخدم جميع أنحاء المملكة</span>
+                </li>
+                <li>
+                <i class="fas fa-phone footer-contact-icon"></i>
+                <a href="tel:+966123456789" dir="ltr">+966 12 345 6789</a>
+                </li>
+                <li>
+                <i class="fas fa-envelope footer-contact-icon"></i>
+                <a href="mailto:info@ataamada.sa">info@ataamada.sa</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </div>
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 footer-bottom-inner">
+            <span class="footer-copy">© 2026 عطاء مدى للمقاولات والعزل. جميع الحقوق محفوظة.</span>
+        </div>
+        </div>
+    </footer>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
